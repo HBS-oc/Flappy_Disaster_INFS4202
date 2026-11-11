@@ -104,7 +104,7 @@ class HomeScreenState extends State<HomeScreen> {
                 },
                 child: Text(
                   'Play',
-                  style: TextStyle(fontFamily: 'Pix', color: Colors.black),
+                  style: TextStyle(fontFamily: 'Pix', color: Colors.black, fontSize: 23),
                 ),
               ),
               SizedBox(height: 20),
