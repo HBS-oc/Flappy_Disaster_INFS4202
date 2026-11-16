@@ -6,10 +6,10 @@ class GameMechanics {
   Bird bird = Bird(
       y: 300,
       velocityY: 0,
-      gravity: 500,
+      gravity: 750,
       width: 40,
       height: 30,
-      flapStrength: 250
+      flapStrength: 300
     );
   List<DoublePipe> pipes;
   int score;
