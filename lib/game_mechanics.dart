@@ -10,6 +10,7 @@ class GameMechanics {
       width: 40,
       height: 30,
       flapStrength: 375
+      flapStrength: 300
     );
   List<DoublePipe> pipes;
   int score;
