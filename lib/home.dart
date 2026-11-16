@@ -135,8 +135,8 @@ class HomeScreenState extends State<HomeScreen> {
                                     MainAxisAlignment.spaceAround,
                                 children: [
                                   Flexible(
-                                    child: InkWell(
-                                      child: Column(
+                                    child: ListTile(
+                                      title: Column(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
                                           Image.asset(
@@ -165,8 +165,8 @@ class HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
                                   Flexible(
-                                    child: InkWell(
-                                      child: Column(
+                                    child: ListTile(
+                                      title: Column(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
                                           Image.asset(
@@ -195,8 +195,8 @@ class HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
                                   Flexible(
-                                    child: InkWell(
-                                      child: Column(
+                                    child: ListTile(
+                                      title: Column(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
                                           Image.asset(
@@ -233,8 +233,8 @@ class HomeScreenState extends State<HomeScreen> {
                                     MainAxisAlignment.spaceAround,
                                 children: [
                                   Flexible(
-                                    child: InkWell(
-                                      child: Column(
+                                    child: ListTile(
+                                      title: Column(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
                                           Image.asset(
@@ -263,8 +263,8 @@ class HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
                                   Flexible(
-                                    child: InkWell(
-                                      child: Column(
+                                    child: ListTile(
+                                      title: Column(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
                                           Image.asset(
@@ -293,8 +293,8 @@ class HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
                                   Flexible(
-                                    child: InkWell(
-                                      child: Column(
+                                    child: ListTile(
+                                      title: Column(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
                                           Image.asset(

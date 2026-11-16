@@ -47,9 +47,9 @@ class GameScreenState extends State<GameScreen> {
     if (widget.difficulity == 'Easy') {
       return 220;
     } else if (widget.difficulity == 'Medium') {
-      return 170;
+      return 180;
     } else {
-      return 130;
+      return 140;
     }
   }
 
