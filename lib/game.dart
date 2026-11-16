@@ -230,7 +230,7 @@ class GameScreenState extends State<GameScreen> {
               left: game.bird.x,
               top: game.bird.y,
               child: Transform.rotate(
-                angle: (game.bird.velocityY / 750 - 0.45),
+                angle: ((game.bird.velocityY / 750 - 0.3) * 1.2),
                 child: Image.asset(
                   'assets/${widget.selectedSkin}.png',
                   width: 40,
