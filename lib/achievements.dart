@@ -29,7 +29,7 @@ class Achievements {
     for (Leaderboards u in userScores) {
       for (Achievement a in achi) {
         if (u.difficulty == a.difficulty) {
-          if (u.highScore > a.score) {
+          if (u.highScore >= a.score) {
             score.add(1);
           } else {
             score.add(u.highScore / a.score);
