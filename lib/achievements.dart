@@ -22,7 +22,7 @@ class Achievements {
   List<Achievement> achi = AchievementProgress.storage;
   Achievements(this.user);
 
-  Map<String, double> checkAchievments() {
+  Map<String, double> checkAchievements() {
     List<Leaderboards> userScores = LeaderboardStorage.getUserScores(user);
     Map<String, double> score = {};
 
