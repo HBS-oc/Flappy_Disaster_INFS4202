@@ -22,14 +22,14 @@ class Achievements {
   List<Achievement> achi = AchievementProgress.storage;
   Achievements(this.user);
 
-  List<double> checkAchievements() {
+  List<double> checkAchievments() {
     List<Leaderboards> userScores = LeaderboardStorage.getUserScores(user);
     List<double> score = [];
 
-    for (Leaderboards u in userScores) {
-      for (Achievement a in achi) {
+    for (Achievement a in achi) {
+      for (Leaderboards u in userScores) {
         if (u.difficulty == a.difficulty) {
-          if (u.highScore >= a.score) {
+          if (u.highScore > a.score) {
             score.add(1);
           } else {
             score.add(u.highScore / a.score);
