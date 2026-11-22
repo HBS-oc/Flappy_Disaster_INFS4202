@@ -22,17 +22,17 @@ class Achievements {
   List<Achievement> achi = AchievementProgress.storage;
   Achievements(this.user);
 
-  List<double> checkAchievments() {
+  Map<String, double> checkAchievments() {
     List<Leaderboards> userScores = LeaderboardStorage.getUserScores(user);
-    List<double> score = [];
+    Map<String, double> score = {};
 
     for (Achievement a in achi) {
       for (Leaderboards u in userScores) {
         if (u.difficulty == a.difficulty) {
           if (u.highScore > a.score) {
-            score.add(1);
+            score.addEntries([MapEntry(a.id, 1.0)]);
           } else {
-            score.add(u.highScore / a.score);
+            score.addEntries([MapEntry(a.id, u.highScore / a.score)]);
           }
         }
       }
