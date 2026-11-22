@@ -22,7 +22,7 @@ class Achievements {
   List<Achievement> achi = AchievementProgress.storage;
   Achievements(this.user);
 
-  List<double> checkAchievments() {
+  List<double> checkAchievements() {
     List<Leaderboards> userScores = LeaderboardStorage.getUserScores(user);
     List<double> score = [];
 
