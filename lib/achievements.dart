@@ -1,3 +1,5 @@
+import 'leaderboards.dart';
+
 class Achievement {
   String title;
   String id;
